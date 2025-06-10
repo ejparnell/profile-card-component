@@ -1,14 +1,15 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
-import './globals.css';
+import { Kumbh_Sans } from 'next/font/google';
+import '@/styles/globals.css';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const kumbhSans = Kumbh_Sans({
+    variable: '--font-kumbh-sans',
     subsets: ['latin'],
+    weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
-    title: 'Frontend Mentor | Next.js Template',
+    title: 'Frontend Mentor | Profile card component',
     keywords: ['Frontend Mentor', 'Next.js', 'React', 'Web Development'],
     authors: [{ name: 'Elizabeth Parnell' }],
     creator: 'Elizabeth Parnell',
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
         apple: '/favicon-32x32.png',
         shortcut: '/favicon-32x32.png',
     },
-    description: 'A Next.js template for Frontend Mentor challenges',
+    description:
+        'A profile card component built with Next.js and React, designed for the Frontend Mentor challenge by Elizabeth Parnell.',
 };
 
 export default function RootLayout({
@@ -27,7 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={geistSans.variable}>{children}</body>
+            <body className={kumbhSans.variable}>{children}</body>
         </html>
     );
 }

@@ -1,0 +1,63 @@
+@import './variables.css';
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-cyan);
+    font-size: var(--font-size);
+    color: var(--dark-blue);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: -380px;
+    left: -380px;
+    background-image: url('/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 622px;
+    height: 622px;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -320px;
+    right: -400px;
+    background-image: url('/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 622px;
+    height: 622px;
+}
+
+@media (min-width: 1440px) {
+    body::before {
+        top: -500px;
+        left: -240px;
+        width: 978px;
+        height: 978px;
+    }
+
+    body::after {
+        bottom: -600px;
+        right: -190px;
+        width: 978px;
+        height: 978px;
+    }
+}

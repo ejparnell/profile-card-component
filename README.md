@@ -1,72 +1,66 @@
-# tktk - Project Title
+# Profile Card Component - Frontend Mentor Challenge
 
-<!-- tktk - Overview of the project, its purpose, and what it aims to achieve. Example below: -->
-<!-- This project is a responsive article preview card component based on a mockup from [Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Reimagined and built by **Elizabeth Parnell**, this implementation showcases modern web development practices using **Next.js**, **React**, **TypeScript**, and **CSS Modules**. -->
+This project is a responsive **profile card component** based on a mockup from [Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Reimagined and built by **Elizabeth Parnell**, this implementation showcases modern web development practices using **Next.js**, **React**, **TypeScript**, and **CSS Modules**.
 
 ---
 
 ## 🖥️ Live Demo
 
 - 🔗 [Live Site](tktk)
-- 💻 [Code Repository](tktk)
+- 💻 [Code Repository](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
 ---
 
 ## 🧰 Tech Stack
 
-<!-- tktk - List of technologies used in the project, example below: -->
-<!-- - **Next.js** – React framework for optimized rendering
+- **Next.js** – React framework for optimized rendering
 - **React** – Modular component architecture
 - **TypeScript** – Type safety for more maintainable code
 - **CSS Modules** – Locally scoped styles
-- **Mobile-first design** – Built to perform seamlessly across screen sizes -->
+- **Mobile-first design** – Built to perform seamlessly across screen sizes
 
 ---
 
 ## 📸 Preview
 
-<!-- tktk Preview images here -->
+![Desktop View](./screenshots/desktop-view.png)
+![Mobile View](./screenshots/mobile-view.png)
 
 ---
 
 ## 📐 Features
 
-<!-- tktk - List of features implemented in the project, example below: -->
-<!-- - Responsive layout that adapts to mobile and desktop screens
-- Share icon that toggles visibility of social media links
-- Smooth toggle logic with lightweight JavaScript
-- Clean and semantic HTML for accessibility and maintainability -->
+- Fully responsive layout optimized for mobile and desktop
+- Clean, modern styling consistent with the design mockup
+- Semantic HTML and accessible structure
+- Reusable component structure with separation of concerns
 
 ---
 
 ## 💡 Highlights & Learnings
 
-<!-- tktk - Key takeaways from the project, example below: -->
-<!-- During this build, I focused on:
+One of the most satisfying aspects of this build was getting the background design elements positioned *just right*. I wanted to preserve a clean DOM and avoid using unnecessary `<div>`s purely for styling, so I turned to `::before` and `::after` pseudo-elements.
 
-- Structuring reusable and accessible components
-- Managing state for toggling UI visibility
-- Enhancing mobile responsiveness with clean CSS layout techniques
-- Using **TypeScript** to ensure reliability in interactivity and prop management -->
+These allowed me to place the decorative top and bottom background images directly on the `body` element. They don't affect accessibility (since they're ignored by screen readers), and they adapt cleanly between mobile and desktop via media queries. It's a tiny technique that made a big difference in both layout clarity and code quality.
+
+---
+
+## ✅ What I’m Most Proud Of
+
+I'm especially proud of using pseudo-elements to render the background images without cluttering the DOM. Instead of falling back on extra markup or stuffing styling concerns into components, I kept layout responsibilities where they belong—in the stylesheet. It's a subtle choice, but one that reflects a deeper commitment to writing clean, accessible, and maintainable code.
 
 ---
 
 ## 🚧 Areas for Future Iteration
 
-<!-- tktk - Potential improvements or features to add in the future, example below: -->
-<!-- - Add keyboard accessibility for the share toggle
-- Animate the share menu with a slide or fade effect
-- Expand component for dynamic content using props or data files -->
-
----
+- Add animations or transitions to the card on hover or mount
+- Convert static content into dynamic props for scalabi
 
 ## 📚 Resources & Credits
 
-<!-- tktk - List of resources used in the project, example below: -->
-
-- [Frontend Mentor Challenge](tktk) – Original mockup and layout specs
-  <!-- - [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-- [MDN Web Docs](https://developer.mozilla.org/en-US/) – Reference for web standards -->
+- [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) – Original mockup and layout specs
+- [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) – Reference for web standards
 
 ---
 
@@ -87,8 +81,8 @@ Software Engineer | Frontend Specialist | UX Enthusiast
 To run this project locally:
 
 ```bash
-git clone tktk
-cd tktk
+git clone https://github.com/ejparnell/profile-card-component.git
+cd profile-card-component
 npm install
 npm run dev
 ```
