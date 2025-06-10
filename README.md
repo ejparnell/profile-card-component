@@ -6,7 +6,7 @@ This project is a responsive **profile card component** based on a mockup from [
 
 ## 🖥️ Live Demo
 
-- 🔗 [Live Site](tktk)
+- 🔗 [Live Site](https://bp-profile-card-component.netlify.app/)
 - 💻 [Code Repository](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
 ---
